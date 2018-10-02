@@ -1,0 +1,123 @@
+<html>
+
+<head>
+    <link rel="icon" href="../../images/Icon.png">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <title>Japonština.cz</title>
+
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-gap: 10px;
+            text-align: center;
+            cursor: pointer;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 1em;
+        }
+
+        .wrapper div {
+            background: #fff;
+            padding: 1em;
+            margin: .5em;
+            border: solid 0.5px black;
+            border-radius: 5px;
+        }
+
+        .wrapper div:hover {
+            background-color: rgb(230, 230, 230);
+            -webkit-transition-duration: 200ms;
+        }
+
+        .wrapper a div {
+            text-align: center;
+        }
+
+        div h1 {
+            font-size: 1.5em;
+        }
+
+        h1,
+        p {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <aside>
+        <a href="../../index.html">
+            <div id="avatar"></div>
+            <figcaption>Japonština.cz</figcaption>
+        </a>
+        <img src="../../images/menu.svg">
+        <nav>
+            <ul>
+                <li>
+                    <a href="../../index.html">
+                        <i class="fa fa-home"></i> Home
+                    </a>
+                </li>
+                <li>
+                    <a href="../Lekce.html">Lekce</a>
+                </li>
+                <li>
+                    <a href="../Zaklad.html">Základ</a>
+                </li>
+                <li>
+                    <a href="../Obsah.html">Obsah</a>
+                </li>
+                <li>
+                    <a href="../Kontakt.html">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <h1>GRAMATIKA</h1>
+        <hr color="black" size="1">
+        <div class="wrapper">
+            <div>
+                <a href="LekceGramatika/1LekceCisla.html">
+                    <h1>1. Lekce - Čísla</h1>
+                    <p>
+                        <b>Číslo</b> je abstraktní entita užívaná pro vyjádření množství nebo pořadí.
+                    </p>
+                </a>
+            </div>
+            <div>
+                <a href="LekceGramatika/2LekcePartikule.html">
+                    <h1>2. Lekce - Partikule</h1>
+                    <p>
+                        <b>Partikule</b> je v obecném významu částice, částka nebo propojení slov nějakým jiným slovem.
+                    </p>
+                </a>
+            </div>
+            <div>
+                <a href="LekceGramatika/3LekceZapor.html">
+                    <h1>3. Lekce - Zápor</h1>
+                    <p>
+                        <b>Zápor</b> v lingvistice znamená popření obsahu věty, části věty, větného členu nebo slova.
+                    </p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        (function () {
+            var menu = document.querySelector('ul'),
+                menulink = document.querySelector('img');
+
+            menulink.addEventListener('click', function (e) {
+                menu.classList.toggle('active');
+                e.preventDefault();
+            });
+        })();
+    </script>
+</body>
+
+</html>

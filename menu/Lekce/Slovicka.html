@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <link rel="icon" href="../../images/Icon.png">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <title>Japonština.cz</title>
+</head>
+
+<body>
+    <aside>
+        <a href="../../index.html">
+            <div id="avatar"></div>
+            <figcaption>Japonština.cz</figcaption>
+        </a>
+        <img src="../../images/menu.svg">
+        <nav>
+            <ul>
+                <li>
+                    <a href="../../index.html">
+                        <i class="fa fa-home"></i> Home
+                    </a>
+                </li>
+                <li>
+                    <a href="../Lekce.html">Lekce</a>
+                </li>
+                <li>
+                    <a href="../Zaklad.html">Základ</a>
+                </li>
+                <li>
+                    <a href="../Obsah.html">Obsah</a>
+                </li>
+                <li>
+                    <a href="../Kontakt.html">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <h1>SLOVÍČKA</h1>
+        <hr color="black" size="1">
+    </main>
+
+    <script>
+        (function () {
+            var menu = document.querySelector('ul'),
+                menulink = document.querySelector('img');
+
+            menulink.addEventListener('click', function (e) {
+                menu.classList.toggle('active');
+                e.preventDefault();
+            });
+        })();
+    </script>
+</body>
+
+</html>

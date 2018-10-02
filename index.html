@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <link rel="icon" href="images/Icon.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <title>Japonština.cz</title>
+</head>
+
+<body>
+    <aside>
+        <figure>
+            <a href="index.html">
+                <div id="avatar"></div>
+                <figcaption>Japonština.cz</figcaption>
+            </a>
+        </figure>
+        <img src="images/menu.svg">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-home"></i> Home
+                    </a>
+                </li>
+                <li>
+                    <a href="menu/Lekce.html">Lekce</a>
+                </li>
+                <li>
+                    <a href="menu/Zaklad.html">Základ</a>
+                </li>
+                <li>
+                    <a href="menu/Obsah.html">Obsah</a>
+                </li>
+                <li>
+                    <a href="menu/Kontakt.html">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <h1>JAPONŠTINA</h1>
+        <hr color="black" size="1">
+        <p>
+            Na této stránce jsou napsané všechny věci od začátečníků po pokročilé. Najdete tu všechno o gramatice, poté i slovíčka, znaky
+            i cvičení.
+        </p>
+        <a href="Menu/Lekce.html" class="cta">Lekce</a>
+    </main>
+
+
+    <script>
+        (function () {
+            var menu = document.querySelector('ul'),
+                menulink = document.querySelector('img');
+
+            menulink.addEventListener('click', function (e) {
+                menu.classList.toggle('active');
+                e.preventDefault();
+            });
+        })();
+    </script>
+</body>
+
+</html>
